@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF9800"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:paddingVertical="8dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Receta del día"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Panqueques"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:src="@drawable/receta" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Ingredientes"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Cantidad"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Comprado"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Leche Descremada"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="2 tazas"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <CheckBox
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Huevos"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="2 unidades"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <CheckBox
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Aceite"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="1 cucharada"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <CheckBox
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Harina"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="1 1/2 tazas"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <CheckBox
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="manjar"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="12 cuchradas"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        />
+                    <CheckBox
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="¡A cocinar!"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Paso 1"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="1.En un bowl, vierte todos los ingredientes líquidos como la leche, huevos, y aceite, para luego agregar los ingredientes secos. A mano, bate enérgicamente hasta disolver los grumos de harina, si es necesario, puedes pasar la mezcla por un colador y disolver los grumos restantes."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Paso 2"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="2.Luego calienta una sartén de teflón o antiadherente de diametro mediano, vierte ¾ de un cucharón y distribuye por toda la sartén con movimientos circulares e inclinados con el mango de la sartén. Cocina durante unos segundos hasta dorar sus bordes y voltea. Cocina unos segundos mas y repite el procedimiento hasta acabar la mezcla."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Paso 3"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="3.Una vez listos, rellénalos uno a uno con una cucharada de manjar NESTLÉ® y enróllalos sobre sí mismos, espolvorea azúcar flor y sírvelos de inmediato fríos o calientes como más te guste."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_marginBottom="4dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/botonrdd"
+            android:onClick="onClickrdd"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Volver al Menú Principal"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
