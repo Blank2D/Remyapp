@@ -31,6 +31,8 @@
         <activity android:name=".TodasLasRecetas"></activity>
         <activity android:name=".Mapa"></activity>
         <activity android:name=".SensorActivity"></activity>
+        <activity android:name=".Multimedia"></activity>
+        <activity android:name="CRUD"></activity>
 
 
     </application>

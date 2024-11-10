@@ -82,5 +82,18 @@ public class AccesoActivity  extends AppCompatActivity{
         Intent intent = new Intent(this, SensorActivity.class);
         startActivity(intent);
     }
+    public void onClickMultimedia(View view){
+        Intent intent = new Intent(this, Multimedia.class);
+        startActivity(intent);
+    }
+
+    public void onCLickCRUD(View view){
+        Intent intent = new Intent(this, CRUD.class);
+        startActivity(intent);
+    }
+
+
+
+
 
 }
